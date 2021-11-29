@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Online Courece Enrollment</title>
+        <link rel="stylesheet" href="Styles/courseStyle.css">
+        <script src="Script/course.js"></script>
+    </head>
+    <body>
+        <div id="mainPage">
+            <h1>Main Home Page</h1>
+            <input type="button" value="Registration" onclick="registerPage()" class="button"><br><br>
+            <input type="button" value="User Login" onclick="loginPage()" class="button"><br><br>
+        </div>
+        <div id="registration">
+            <h1>User Registration</h1>
+            <label>Enter the Student Name:</label><br>
+            <input type="text" id="userName" ><br><br>
+            <label>Enter the Student Age:</label><br>
+            <input type="number" id="userAge" ><br><br>
+            <label>Enter the Student Phone number:</label><br>
+            <input type="number" id="phoneNumber" ><br><br>
+            <input type="button" value="Register" onclick="registration()" class="button">
+        </div>
+        <div id="login">
+            <label>User Id:</label><br>
+            <input type="text" id="userId" ><br><br>
+            <input type="button" value="Login" onclick="login()" class="button"><br><br>
+            <P>The list student details:</P>
+            <label id="existingDetails"></label>
+        </div>
+        <div id="selection">
+            <input type="button" value="Available Cource" onclick="availablecource()" class="button"><br><br>
+            <input type="button" value="Enrolled Cource" onclick="enrolledcource()" class="button">
+        </div>
+        <div id="availableCource">
+            <h1>Available Course</h1>
+            <select name="cource" id="courceName">
+                <option value="C#">C#</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Java Script">Java Script</option>
+                <option value="Type Script">Type Script</option>
+            </select><br><br>
+            <label>Required Days</label>
+            <input type="text" id="requiredDays"><br><br>
+            <input type="button" value="Enroll" onclick="courseList()" class="button"><br>
+        </div>
+        <div id="enrolledCource">
+            <h1>Enrolled Course</h1>
+            <p>List of Cource: </p>
+            <label id="courceList"></label><br><br>
+            <p>total days required:</p>
+            <label id="totalDays"> </label><br><br>
+            <input type="button" value="Back" onclick="back()" class="button">
+        </div>
+    </body>
+</html>
